@@ -190,49 +190,6 @@
     },
     {
       "name": "tv.twitch:twitch:6.5"
-    },
-    {
-      "name": "tv.twitch:twitch-platform:6.5",
-      "rules": [
-        {
-          "action": "allow"
-        },
-        {
-          "action": "disallow",
-          "os": {
-            "name": "linux"
-          }
-        }
-      ],
-      "natives": {
-        "linux": "natives-linux",
-        "windows": "natives-windows-${arch}",
-        "osx": "natives-osx"
-      },
-      "extract": {
-        "exclude": [
-          "META-INF/"
-        ]
-      }
-    },
-    {
-      "name": "tv.twitch:twitch-external-platform:4.5",
-      "rules": [
-        {
-          "action": "allow",
-          "os": {
-            "name": "windows"
-          }
-        }
-      ],
-      "natives": {
-        "windows": "natives-windows-${arch}"
-      },
-      "extract": {
-        "exclude": [
-          "META-INF/"
-        ]
-      }
     }
   ],
   "mainClass": "net.minecraft.client.main.Main",
